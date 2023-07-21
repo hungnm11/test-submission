@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/styles/Page_1.module.scss';
 import Image from 'next/image';
+import Button from '@/components/Button';
 
 const PHOTO_ITEMS = [
   {
@@ -301,16 +302,7 @@ const Page_1 = () => {
           ))}
         </div>
       </div>
-      <div className='flex w-full items-end justify-center'>
-        <a
-          className={styles.button}
-          href='#'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          記録をもっと見る
-        </a>
-      </div>
+      <Button />
     </main>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '@/styles/Page_2.module.scss';
 import Image from 'next/image';
+import Button from '@/components/Button';
 
 const RECOMMAND_ITEMS = [
   {
@@ -100,9 +101,9 @@ const Page_2 = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-                <h2 className={styles.label}>{item.label}</h2>
-                <hr className={styles.line} />
-                <h2 className={styles.desc}>{item.desc}</h2>
+            <h2 className={styles.label}>{item.label}</h2>
+            <hr className={styles.line} />
+            <h2 className={styles.desc}>{item.desc}</h2>
           </a>
         ))}
       </div>
@@ -127,16 +128,7 @@ const Page_2 = () => {
           </div>
         ))}
       </div>
-      <div className='flex w-full items-end justify-center'>
-        <a
-          className={styles.button}
-          href='#'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          記録をもっと見る
-        </a>
-      </div>
+      <Button />
     </main>
   );
 };

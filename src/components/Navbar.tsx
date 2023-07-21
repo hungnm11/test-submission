@@ -13,12 +13,12 @@ const NAVBAR = [
   {
     icon: '/icon_challenge.svg',
     label: 'チャレンジ',
-    url: '/page_2',
+    url: '/',
   },
   {
     icon: '/icon_info.svg',
     label: 'お知らせ',
-    url: '/page_3',
+    url: '/',
   },
 ];
 
@@ -100,7 +100,7 @@ const Navbar = () => {
               }`}
             >
               <li className=''>
-                <div className={styles.menu_dropdown_items}>自分の記録</div>
+                <Link href="/page_1" className={styles.menu_dropdown_items}>自分の記録</Link>
               </li>
               <li className=''>
                 <div className={styles.menu_dropdown_items}>体重グラフ</div>
@@ -112,7 +112,7 @@ const Navbar = () => {
                 <div className={styles.menu_dropdown_items}>選択中のコース</div>
               </li>
               <li className=''>
-                <div className={styles.menu_dropdown_items}>コラム一覧</div>
+                <Link href="/page_2" className={styles.menu_dropdown_items}>コラム一覧</Link>
               </li>
               <li className=''>
                 <div className={styles.menu_dropdown_items}>設定</div>

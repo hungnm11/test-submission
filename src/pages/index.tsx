@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
+import Button from '@/components/Button';
 
 const ITEMS = [
   {
@@ -109,16 +110,7 @@ export default function Home() {
             </a>
           ))}
         </div>
-        <div className='flex w-full items-end justify-center'>
-          <a
-            className={styles.button}
-            href='#'
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            記録をもっと見る
-          </a>
-        </div>
+      <Button />
       </main>
     </>
   );
