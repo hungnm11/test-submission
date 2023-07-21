@@ -1,4 +1,165 @@
 .main {
+  display: block;
+  min-height: 100vh;
+  width: 1280px;
+  margin: auto;
+  padding: 50px 0;
+  .records {
+    justify-content: space-between;
     display: flex;
-    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+  }
+  .photo_item {
+    position: relative;
+    height: 37ch;
+    max-width: 37ch;
+    min-width: 37ch;
+    margin: 2px;
+    border: 20px solid #ffcc21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    .image {
+      filter: gray; /* IE6-9 */
+      -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+      filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+      opacity: 0.3;
+    }
+    .content {
+      z-index: 1;
+      width: 100%;
+      justify-content: center;
+      display: block;
+      text-align: center;
+    }
+    .label {
+      font-size: 25px;
+      color: #ffcc21;
+      margin: auto;
+      justify-content: center;
+    }
+    .description {
+      font-size: 14px;
+      color: #fff;
+      margin: auto;
+      justify-content: center;
+      background-color: #ff963c;
+      margin: 10px 60px;
+    }
+  }
+  .chart_records {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin: 50px 0;
+    height: 405px;
+    background-color: #414141;
+    padding: 20px;
+    flex-direction: column;
+    .header {
+      display: flex;
+      flex-direction: row;
+      span:first-child {
+        color: #fff;
+        width: 80px;
+        display: flex;
+      }
+      span:last-child {
+        color: #fff;
+        display: flex;
+        font-size: 22px;
+      }
+    }
+    .list_items {
+      display: flex;
+      flex: 1;
+      overflow-y: scroll;
+      .list_items_column {
+        flex: 1 1 0%;
+        padding: 0 10px;
+      }
+      .row {
+        padding: 5px;
+        flex-direction: row;
+        display: flex;
+        font-size: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+        .label {
+          font-size: 15px;
+          color: #fff;
+          display: block;
+          display: list-item; /* This has to be "list-item"                                          */
+          list-style-type: disc; /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+          list-style-position: inside;
+          font-family: 'Hiragino Kaku Gothic Pro';
+        }
+        .desc {
+          font-family: 'Hiragino Kaku Gothic Pro';
+          font-size: 15px;
+          color: #ffcc21;
+          display: block;
+          list-style-position: inside;
+          display: list-item;
+          list-style-type: none;
+          margin-left: 22px;
+        }
+      }
+    }
+  }
+  .my_diary {
+    width: 100%;
+    margin: 50px 0;
+    .content_item {
+      border: 1px solid #181818;
+      background-color: transparent;
+      height: 22ch;
+      max-width: 36ch;
+      min-width: 36ch;
+      margin-bottom: 7px;
+      padding: 15px;
+      .header {
+        display: flex;
+        flex-direction: column;
+        span:first-child {
+          display: flex;
+          font-size: 18px;
+        }
+        span:last-child {
+          display: flex;
+          font-size: 18px;
+        }
+      }
+      .label {
+        font-size: 12px;
+        color: #000;
+        margin: auto;
+        justify-content: center;
+      }
+    }
+  }
+  .button {
+    width: 296px;
+    height: 56px;
+    background-image: linear-gradient(
+      to top,
+      #ffcc21,
+      #ffbe27,
+      #ffb02e,
+      #ffa335,
+      #ff963c
+    );
+    font-size: 18px;
+    font-family: "Hiragino Kaku Gothic Pro";
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 30px 0;
+    font-weight: normal;
+  }
 }
