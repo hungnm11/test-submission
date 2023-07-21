@@ -8,11 +8,66 @@
   }
   .right {
     flex: 1 1 0%;
-    background-color: #2E2E2E;
+    background-color: #2e2e2e;
   }
 }
 
 .main {
   display: flex;
   min-height: 100vh;
+  align-items: center;
+  width: 1280px;
+  margin: 0 auto;
+  .row_items {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .box {
+    background-image: linear-gradient(
+      to right top,
+      #ffcc21,
+      #ffbe27,
+      #ffb02e,
+      #ffa335,
+      #ff963c
+    );
+    width: 136px;
+    aspect-ratio: 1;
+    clip-path: polygon(
+      93.3% 75%,
+      50% 100%,
+      6.7% 75%,
+      6.7% 25%,
+      50% 0%,
+      93.3% 25%
+    );
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 30px;
+    .title {
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+  .photo_item {
+    position: relative;
+    height: 241px;
+    max-width: 37ch;
+    min-width: 36ch;
+    margin: 2px;
+    .label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 10px 20px;
+      background-color: #ffcc21;
+      font-size: 15px;
+      color: #fff;
+      max-width: 30ch;
+    }
+  }
 }
