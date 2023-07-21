@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Development Environment
+Node.js v18.17.0
+npm 9.6.7
+react 18.2.0
+
 ## Getting Started
 
 First, run the development server:
