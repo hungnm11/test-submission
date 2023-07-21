@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Development Environment
 Node.js v18.17.0
+
 npm 9.6.7
+
 react 18.2.0
 
 ## Getting Started

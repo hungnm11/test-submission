@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  .left {
+    flex: none;
+    width: 540px;
+    height: 312px;
+    position: relative;
+  }
+  .right {
+    flex: 1 1 0%;
+    background-color: #2E2E2E;
+  }
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+}
