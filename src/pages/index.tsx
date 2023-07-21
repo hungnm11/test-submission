@@ -78,9 +78,7 @@ export default function Home() {
         </div>
         <div className={styles.right}>Chart</div>
       </div>
-      <main
-        className={`flex min-h-screen flex-col ${styles.main}`}
-      >
+      <main className={`flex min-h-screen flex-col ${styles.main}`}>
         <div className={styles.row_items}>
           {ITEMS.map((item, index) => (
             <div key={index} className={styles.box}>
@@ -110,6 +108,16 @@ export default function Home() {
               <h2 className={styles.label}>{item.label}</h2>
             </a>
           ))}
+        </div>
+        <div className='flex w-full items-end justify-center'>
+          <a
+            className={styles.button}
+            href='#'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            記録をもっと見る
+          </a>
         </div>
       </main>
     </>
