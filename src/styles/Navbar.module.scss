@@ -26,9 +26,30 @@ $text-color-primary: #fff;
     font-size: 16px;
     display: flex;
     align-items: center;
+    position: relative;
     .title {
       margin-left: 5px;
       font-family: 'Hiragino Kaku Gothic Pro';
     }
   }
+}
+
+.menu_dropdown {
+  position: absolute;
+  width: 280px;
+  right: 0;
+  top: 35px;
+  background-color: #777;
+}
+.menu_dropdown_items {
+    display: block;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    font-family: 'Hiragino Kaku Gothic Pro';
+    font-size: 18px;
+    color: #fff;
+    padding: 21px 15px;
+    border-bottom: 1px solid #666666;
+    border-top: 1px solid #999999;
 }
